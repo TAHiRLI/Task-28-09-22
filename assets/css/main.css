@@ -1,0 +1,211 @@
+/* Globals */
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    cursor: pointer;
+}
+/* ============= */
+
+/* Header */
+header{
+    height: 100vh;
+    background-size: 100%;
+    background-position: center center;
+    background-image: url(Images/back-01-min.jpg);
+}
+
+/* Nav */
+nav{
+    z-index: 9;
+    padding: 0 2.5rem;
+    height: 70px;
+    background-color: chocolate;
+}
+.menu > li{
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 20px;
+}
+.submenu{
+    transition: 0.5s;
+    position: absolute;
+    top: 15px;
+    left: -10px;
+    height: 0;
+    overflow: hidden;
+    background-color: chocolate;
+}
+.submenu li{
+    padding : .5rem 1rem;
+}
+.parent:hover .submenu{
+    padding-top: 30px;
+    height: 190px ;
+}
+
+
+
+
+
+/* ========== */
+
+
+
+
+/* Section map */
+
+#map  iframe{
+   
+    height: calc(100vh - 70px) ;
+}
+.map-container{
+    background-color: red;
+    height: 40vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* ========== */
+
+
+
+/* Products */
+
+
+.item{
+    padding: 40px;
+    width: 33.33%;
+    height: 90vh;
+    overflow: hidden;
+}
+.item:hover{
+    background-color: beige;
+
+}
+.item:hover .left-img{
+    left: 0;
+}
+.item:hover .right-img{
+    right: 0;
+}
+
+.img-container{
+    height: 70%;
+    background-repeat: no-repeat;
+    background-image: url(https://azza.az/wp-content/themes/azza-theme/images/bg-item-min.png);
+}
+.img-container .mid-img{
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.item .left-img, .right-img{
+    transition: .25s;
+    bottom: 15%;
+    width: 20%;
+}
+
+
+.left-img{
+    left: -50%;
+}
+
+.right-img{
+    right: -50%;
+}
+
+.vine{
+    height: 70%;
+    
+}
+
+/* ========== */
+
+/* Section galery */
+#galery{
+    padding: 20vh 0;
+}
+.photo{
+    overflow: hidden;
+    height: 70vh;
+    width: 16.3%;
+    
+   
+}
+.photo img{
+
+    transition: 0.5s;
+}
+.photo:hover img{
+    height: 120%;
+}
+
+/* ========== */
+
+/* Items section */
+#items{
+    padding: 20vh 0;
+}
+.product{
+    width: 25%;
+    height: 50vh;
+    flex-direction: column;
+}
+.product img{
+    width: 100%;
+    transition: 0.25s;
+
+}
+.product .hov-color{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+ .product:hover .hov-color{
+    opacity: 1;
+}
+.product:hover img{
+   width: 110%;
+}
+.hov-color button{
+    width: 35%;
+    height: 25%;
+    background-color: bisque;
+}
+
+
+.pic-info{
+    bottom: 0;
+}
+
+
+/* ============= */
+
+
+/* footer */
+
+footer{
+    height: 40vh;
+    background-color: #4B2613;
+    background-image: url(https://azza.az/wp-content/themes/azza-theme/images/footerBg-min.png);
+    
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+
+}
+
+
+/* ================= */
